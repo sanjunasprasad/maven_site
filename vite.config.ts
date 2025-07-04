@@ -4,7 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
  
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
- console.log(__dirname)
+console.log(__dirname)
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -16,7 +16,7 @@ export default defineConfig({
   },
   root: path.resolve(__dirname, ""),
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
